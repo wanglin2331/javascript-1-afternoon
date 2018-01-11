@@ -18,7 +18,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler(name){
+  return name == "Tyler";
+};
 
 
 ////////// PROBLEM 2 //////////
