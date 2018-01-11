@@ -18,10 +18,11 @@ var name = 'Tyler';
 */
 
 //Code Here
-function isTyler(name){
-  return name == "Tyler";
+function isTyler(string){
+  return string == "Tyler";
 };
 
+isTyler(name);
 
 ////////// PROBLEM 2 //////////
 
