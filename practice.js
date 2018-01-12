@@ -31,8 +31,8 @@ isTyler(name);
 */
 
 //Code Here
-
-
+function getName(){return prompt("Please enter your given name.")};
+console.log(getName());
 
 ////////// PROBLEM 3 //////////
 
