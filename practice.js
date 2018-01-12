@@ -21,7 +21,6 @@ var name = 'Tyler';
 function isTyler(string){
   return string == "Tyler";
 };
-
 isTyler(name);
 
 ////////// PROBLEM 2 //////////
@@ -44,8 +43,8 @@ console.log(getName());
 */
 
 //Code Here
-
-
+function welcome(){alert("Welcome, "+getName())};
+console.log(welcome());
 
 ////////// PROBLEM 4 //////////
 
@@ -55,7 +54,13 @@ console.log(getName());
 
 //Answer Here
 
+//argument is used when calling the function: myFunction(argument)
+//parameter is used when building the function: function myFunction(parameters)
 
+//A parameter is a variable in a method definition. When a method is called,
+//the arguments are the data you pass into the method parameters. 
+//Parameter is variable in the declaration of function.
+//Argument is the actual value of this variable that gets passed to function.
 
 ////////// PROBLEM 5 //////////
 
@@ -64,8 +69,20 @@ console.log(getName());
 */
 
 //Answer Here
-
-
+//false.
+//0
+//'' or "" (empty string)
+//null.
+//undefined.
+//NaN (e.g. the result of 1/0 )
+function Truthiness (val) {
+  if (val) {
+      console.log("Truthy!");
+  } else {
+      console.log("Falsy.");
+  }
+}
+Truthiness(false);
 
 ////////// PROBLEM 6 //////////
 
@@ -74,7 +91,9 @@ console.log(getName());
 */
 
 //Code Here
-  
+function myName(){
+  return "Lin Wang"
+}
 
 
 /*
@@ -82,7 +101,10 @@ console.log(getName());
 */
 
 //Code Here
-
+function newMyName() {
+  return function myName(){
+    return "Lin Wang"}
+}
 
 
 /*
@@ -90,6 +112,9 @@ console.log(getName());
 */
 
 // Code Here
+
+var result=newMyName();
+alert(result());
 
 
 
@@ -100,7 +125,9 @@ console.log(getName());
 */
 
 //Code Here
-
+function outerFn(){
+  return function(){return "Lin Wang"}
+};
 
 
 /*
@@ -108,7 +135,7 @@ console.log(getName());
 */
 
 //Code Here
-
+var innerFn=outerFn();
 
 
 /* 
@@ -116,3 +143,4 @@ console.log(getName());
 */
 
 // Code Here
+innerFn();
